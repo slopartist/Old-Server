@@ -1,0 +1,9 @@
+if [ ! -f /u/apps/quibbler/shared/pids/delayed_job.pid ]; then
+    sudo '/etc/init.d/quibbler_delayedjob' start
+fi
+if [ ! -f /u/apps/quibbler/shared/pids/unicorn.pid ]; then
+    sudo '/etc/init.d/quibbler_unicorn' start
+fi
+#if [ ! -f /u/apps/platform934/shared/pids/unicorn.pid ]; then
+#    sudo '/etc/init.d/unicorn_platform934' start
+#fi
